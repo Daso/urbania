@@ -1,0 +1,35 @@
+<h1>Listing requests</h1>
+
+<table>
+  <tr>
+    <th>Phone</th>
+    <th>Celphone</th>
+    <th>Mail</th>
+    <th>Name</th>
+    <th>Rooms</th>
+    <th>Garage</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requests.each do |request| %>
+  <tr>
+    <td><%= request.phone %></td>
+    <td><%= request.celphone %></td>
+    <td><%= request.mail %></td>
+    <td><%= request.name %></td>
+    <td><%= request.rooms %></td>
+    <td><%= request.garage %></td>
+    <td><%= request.type_id %></td>
+    <td><%= link_to 'Show', request %></td>
+    <td><%= link_to 'Edit', edit_request_path(request) %></td>
+    <td><%= link_to 'Destroy', request, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Request', new_request_path %>

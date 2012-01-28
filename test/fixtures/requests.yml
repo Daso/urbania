@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phone: MyString
+  celphone: MyString
+  mail: MyString
+  name: MyString
+  rooms: 1
+  garage: false
+  type_id: 1
+
+two:
+  phone: MyString
+  celphone: MyString
+  mail: MyString
+  name: MyString
+  rooms: 1
+  garage: false
+  type_id: 1

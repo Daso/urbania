@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Phone:</b>
+  <%= @request.phone %>
+</p>
+
+<p>
+  <b>Celphone:</b>
+  <%= @request.celphone %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @request.mail %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @request.name %>
+</p>
+
+<p>
+  <b>Rooms:</b>
+  <%= @request.rooms %>
+</p>
+
+<p>
+  <b>Garage:</b>
+  <%= @request.garage %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @request.type_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

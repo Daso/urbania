@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Direction:</b>
+  <%= @place.direction %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @place.phone %>
+</p>
+
+<p>
+  <b>Celphone:</b>
+  <%= @place.celphone %>
+</p>
+
+<p>
+  <b>Garage:</b>
+  <%= @place.garage %>
+</p>
+
+<p>
+  <b>Rooms:</b>
+  <%= @place.rooms %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @place.cost %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @place.description %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @place.mail %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @place.type_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>

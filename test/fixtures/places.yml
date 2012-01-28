@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  direction: MyText
+  phone: MyString
+  celphone: MyString
+  garage: false
+  rooms: 1
+  cost: 
+  description: MyText
+  mail: MyString
+  type_id: 1
+
+two:
+  direction: MyText
+  phone: MyString
+  celphone: MyString
+  garage: false
+  rooms: 1
+  cost: 
+  description: MyText
+  mail: MyString
+  type_id: 1

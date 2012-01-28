@@ -1,0 +1,39 @@
+<h1>Listing places</h1>
+
+<table>
+  <tr>
+    <th>Direction</th>
+    <th>Phone</th>
+    <th>Celphone</th>
+    <th>Garage</th>
+    <th>Rooms</th>
+    <th>Cost</th>
+    <th>Description</th>
+    <th>Mail</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @places.each do |place| %>
+  <tr>
+    <td><%= place.direction %></td>
+    <td><%= place.phone %></td>
+    <td><%= place.celphone %></td>
+    <td><%= place.garage %></td>
+    <td><%= place.rooms %></td>
+    <td><%= place.cost %></td>
+    <td><%= place.description %></td>
+    <td><%= place.mail %></td>
+    <td><%= place.type_id %></td>
+    <td><%= link_to 'Show', place %></td>
+    <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    <td><%= link_to 'Destroy', place, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Place', new_place_path %>
